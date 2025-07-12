@@ -1,0 +1,35 @@
+#logo
+{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0 0 30px 20px;
+    
+}
+header
+{
+    height: auto;
+    width: 100%;
+    background-color: aqua;
+    display: inline-block;
+}
+h1
+{
+    text-align: center;
+}
+nav
+{
+    float: right;
+    margin-right: 70px;
+}
+nav ul li
+{
+    float: left;
+    text-decoration: none;
+    padding-left: 5px;
+}
+nav ul li a
+{
+    text-transform: uppercase;
+    font-weight: bold;
+}
