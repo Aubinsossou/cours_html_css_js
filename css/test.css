@@ -111,8 +111,7 @@ h1
     width: 400px;
     height: 318px;
     flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
+    
 }
 
 #article_2
@@ -184,9 +183,14 @@ article
 }
 
 /*Contact*/
+.formulaire
+{
+     background-color: #F2F6FC;
+     margin-bottom: 30px;
+}
 #contact
 {
-    background-color: #F2F6FC;
+    
     margin-bottom: 47px;
     display: flex;
     flex-direction: column;
@@ -205,7 +209,13 @@ input,textarea
     padding-left: 3px;
 }
 
-
+.but
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    
+}
 
 
 /*Footer*/
