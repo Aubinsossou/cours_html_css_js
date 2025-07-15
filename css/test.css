@@ -140,6 +140,8 @@ h1
 {
     display: flex;
     justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     
 }
 #services img
@@ -150,16 +152,6 @@ h1
     justify-content: center;
     justify-items: center;
     
-}
-#services a
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #7A96FF;
-  
-    border-radius: 35px;
 }
 
 h2
@@ -190,12 +182,6 @@ article
     align-items: center;
     justify-items: center;
 }
-#button_services
-{
-    
-    text-align: center;
-    margin: 30px;
-}
 
 /*Contact*/
 #contact
@@ -222,27 +208,7 @@ input,textarea
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Footer*/
 
 footer
 {
