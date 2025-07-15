@@ -77,8 +77,9 @@ section p
 {
     width: 100px;
     height: 100px;
-    margin-left: 700px;
-    margin-top: 30px;
+    margin-left: 630px;
+    margin-top: 50px;
+    border-radius: 360px;
     
 }
 #table tr td
