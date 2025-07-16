@@ -1,66 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Cours de html</title>
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/test.css">
+    <title>Document</title>
+</head>
 
-    <body>
-        <header>
-
-        </header>
-        <h1>Bienvenu au cours de html</h1>    
-        <h2>Bienvenu au cours de html</h2>
-        <h3>Bienvenu au cours de html</h3>
-        <h4>Bienvenu au cours de html</h4>
-        <h5>Bienvenu au cours de html</h5>
-        <h6>Bienvenu au cours de html</h6>
-        <a href="https://google.com" target="_blank">Cliquez ici pour aller sur google</a>
-        <br>
-        <!-- importation d'image -->
-        <!--<img src="images/capture1.png" alt="capture d'écran"> -->
-        <div>
-
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_content">
+                <a href="#" class="header_left">
+                    <span>LOGO</span>
+                </a>
+                <ul class="header_right">
+                    <li class="header_right_item"><a href="#">Acceuil</a></li>
+                    <li class="header_right_item"><a href="#">Blog</a></li>
+                    <li class="header_right_item"><a href="#">Evènement</a></li>
+                    <li class="header_right_item"><a href="#">A propos</a></li>
+                    <li class="header_right_item"><a href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
-         <section>
-            
-         </section>
-         <footer>
-            
-         </footer>
-         <table>
-            <thead>
-                <tr>
-                    <th>Nom</th>
-                    <th>prénom</th>
-                    <th>sexe</th>
-                </tr>
+    </header>
+    <main class="main">
+        <!-- banner-->
+        <section class="banner">
+            <div class="container">
+                <div class="banner_content">
+                    <div class="banner_left">
+                        <h1 class="banner_left_title">Work Hard</h1>
+                        <p class="banner_left_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure .
+                        </p>
+                        <a href="#" class="banner_left_link">Découvrir</a>
+                    </div>
+                    <div class="banner_right">
+                        <img src="./images/image.png" alt="banner_image">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="2">Agblankou</td>
-                    <td>Boris</td>
-                    <td>Masculin</td>
-                </tr>
-                <tr>
-                    <td>Chabi</td>
-                    <td>christelle</td>
-                    <td>Feminin</td>
-                </tr>
-                <tr>
-                    <td>Amlangou</td>
-                    <td>Gaspar</td>
-                    <td>Masculin</td>
-                </tr>
-            </tbody>
-            <tfoot>
-
-            </tfoot>
-         </table>
-    </body>
-
-
+        <!--services-->
+        <section class="services">
+            <div class="container">
+                <div class="services_content">
+                    <h2 class="service_title">Nos services</h2>
+                    <p class="service_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.isi ut aliquip ex ea commodo
+                        consequat.
+                    </p>
+                    <div class="services_list">
+                        <div class="services_list_item">
+                            <img src="./images/icon.png" alt="icon" class="service_image">
+                            <h3 class="service_sub_title">Service1</h3>
+                            <p class="service_sub_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Illum, veniam dolore eum dolorem laudantium exercitationem blanditiis dolores, corrupti
+                                vel, nihil sit! Ad, maiores praesentium magni incidunt perferendis quo suscipit placeat.
+                            </p>
+                            <div class="banner_left_link">
+                                <a href="#">Découvrir</a>
+                            </div>
+                        </div>
+                        <div class="services_list_item">
+                            <img src="./images/icon.png" alt="icon" class="service_image">
+                            <h3 class="service_sub_title">Service2</h3>
+                            <p class="service_sub_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Illum, veniam dolore eum dolorem laudantium exercitationem blanditiis dolores, corrupti
+                                vel, nihil sit! Ad, maiores praesentium magni incidunt perferendis quo suscipit placeat.
+                            </p>
+                            <div class="banner_left_link">
+                                <a href="#">Découvrir</a>
+                            </div>
+                        </div>
+                        <div class="services_list_item">
+                            <img src="./images/icon.png" alt="icon" class="service_image">
+                            <h3 class="service_sub_title">Service3</h3>
+                            <p class="service_sub_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Illum, veniam dolore eum dolorem laudantium exercitationem blanditiis dolores, corrupti
+                                vel, nihil sit! Ad, maiores praesentium magni incidunt perferendis quo suscipit placeat.
+                            </p>
+                            <div class="banner_left_link">
+                                <a href="#">Découvrir</a>
+                            </div>
+                        </div>
+                        <div class="services_list_item">
+                            <img src="./images/icon.png" alt="icon" class="service_image">
+                            <h3 class="service_sub_title">Service4</h3>
+                            <p class="service_sub_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Illum, veniam dolore eum dolorem laudantium exercitationem blanditiis dolores, corrupti
+                                vel, nihil sit! Ad, maiores praesentium magni incidunt perferendis quo suscipit placeat.
+                            </p>
+                            <div class="banner_left_link">
+                                <a href="#">Découvrir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services_content_button">
+                        <a href="#">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="formulaire">
+            <div class="container">
+                <div class="formulaire_content">
+                    <h2 class="formulaire_content_title">Pour nous contactez</h2>
+                    <form action="">
+                        <label for="nom">Nom et prénom :</label>
+                        <input type="text" id="nom" placeholder="Nom et prénom">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" placeholder="Email">
+                        <label for="objet">Object :</label>
+                        <input type="text" id="Object" placeholder="objet">
+                        <label for="message">Message :</label>
+                        <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+                        <div class="services_content_button"><a href="#">Envoyer</a></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_content">
+                <p>Tous droits réservés, @2023.</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
