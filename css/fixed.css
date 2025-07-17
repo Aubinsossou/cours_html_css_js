@@ -1,0 +1,260 @@
+/*General*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color: black;
+    background-image: url(../images/circles.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+.header
+{
+    min-height: 80px;
+}
+footer
+{
+    min-height: 507px;
+}
+.container
+{
+    max-width: 1080px;
+    margin: 0 auto;
+    
+    
+}
+.main
+{
+    min-height: calc(100vh - (80px + 507px));
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+ul
+{
+    list-style: none;
+}
+
+/*Header*/
+
+.header_content
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 32px 0;
+}
+.header_content_link_login
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    
+}
+.header_content_link_login_sign_in
+{
+    width: 96px;
+    height: 40px;
+    border: 1px solid;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+}
+.header_content_sign_up
+{
+    
+    background: linear-gradient(to right, #18C8FF, #933FFE);
+    
+}
+.header_content_list
+{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    
+}
+
+/*Section we wake*/
+
+.we_wake_crypto_content
+{
+    
+    width: 780px;
+    height: 345px;
+    margin: 169px auto;
+    
+}
+.we_wake_content_title
+{
+    font-size: 85px;
+    line-height: 130%;
+    padding-bottom: 88px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+  
+}
+.we_wake_crypto_content_link
+{
+    display: block;
+    width: 170px;
+    height: 56px;
+    background: linear-gradient(to right, #18C8FF, #933FFE);
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 56px;
+    margin: 0 auto;
+    
+}
+/*Section Gestion*/
+.gestion_content
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+.gestion_content_article 
+{
+    background-color: #1A1B23;
+    text-align: center;
+    display: inline-block;
+    border-radius: 25px;
+    line-height: 30px;
+    width: 380px;
+    height: 346px;
+    padding: 25px;
+    
+   
+}
+.gestion_content_article_part1
+{
+   width: 332px;
+   height: 226px;
+}
+.gestion_content_article_part1 p
+{
+    font-size: 16px;
+    color: #898CA9;
+}
+.gestion_content_article a
+{
+    font-size: 16px;
+    color: #B982FF;
+}
+.icon_fleche_direction
+{
+    color: #B982FF;
+    width: 20px;
+    padding-left: 7px;
+    height: 10px;
+    
+}
+
+/*Section crypto mining*/
+
+.crypto_mining_content
+{
+    margin-top: 30px;
+    text-align: center;
+    padding: 140px 70px;
+    
+
+}
+.crypto_mining_content_part1 
+{
+    margin: 30px 0 ;
+    
+    
+}
+.crypto_mining_content_part1 h2
+
+{
+    
+    text-align: center;
+    align-content: center;
+    height: 194px;
+    font-size: 60px;
+    font-family: 'Inter', sans-serif;
+    line-height: 130%;
+    font-weight: 900;
+    
+}
+.crypto_mining_content_part1 p
+{
+    color: #898CA9;
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;
+    
+    
+}
+
+/*Section   Service client*/
+
+.service_client_content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.service_client_content_part2
+{
+    
+    line-height: 150%
+}
+.service_client_content_part2 h2
+{
+    font-size: 50px;
+    line-height: 130%;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0%;
+    font-weight: 900;
+}
+.service_client_content_part2 p
+{
+    color: #898CA9;
+    padding: 30px 0;
+    
+}   
+.service_client_content_part2 a
+{
+    
+    padding: 15px 30px;
+}
+
+/*Section Footer*/
+
+.footer_content
+{
+    display: flex;
+    gap: 50px;
+    
+}
+.footer_content_part1 p
+{
+    padding-bottom: 30px;
+}
+.footer_content_part1 input
+{
+    margin-bottom: 30px;
+}
+.footer_content_part2 a
+{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.footer_content_part3 a
+{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
