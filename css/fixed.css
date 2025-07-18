@@ -1,64 +1,67 @@
 /*General*/
 
-*
-{
+* {
     margin: 0;
     padding: 0;
+    position: relative;
 }
-body
-{
+
+body {
     background-color: black;
-    background-image: url(../images/circles.png);
+    background-image: url('../images/circles.png');
     background-repeat: no-repeat;
     background-size: 100%;
     color: white;
+    overflow-x: hidden;
+
 }
-.header
-{
+
+.header {
     min-height: 80px;
 }
-footer
-{
+
+footer {
     min-height: 507px;
 }
-.container
-{
+
+.container {
     max-width: 1080px;
     margin: 0 auto;
-    
-    
+
+
 }
-.main
-{
+
+.main {
     min-height: calc(100vh - (80px + 507px));
 }
-a
-{
+
+a {
     text-decoration: none;
     color: white;
 }
-ul
-{
+
+ul {
     list-style: none;
 }
 
 /*Header*/
 
-.header_content
-{
+.header_content {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: flex-end;
     padding: 32px 0;
+    gap: 100px;
 }
-.header_content_link_login
-{
+
+.header_content_link_login {
     display: flex;
     justify-content: space-between;
     gap: 12px;
-    
+
 }
-.header_content_link_login_sign_in
-{
+
+.header_content_link_login_sign_in {
     width: 96px;
     height: 40px;
     border: 1px solid;
@@ -66,41 +69,41 @@ ul
     line-height: 40px;
     border-radius: 10px;
 }
-.header_content_sign_up
-{
-    
+
+.header_content_sign_up {
+
     background: linear-gradient(to right, #18C8FF, #933FFE);
-    
+
 }
-.header_content_list
-{
+
+.header_content_list {
     display: flex;
     align-items: center;
     gap: 32px;
-    
+
+
 }
 
 /*Section we wake*/
 
-.we_wake_crypto_content
-{
-    
+.we_wake_crypto_content {
+
     width: 780px;
     height: 345px;
     margin: 169px auto;
-    
+
 }
-.we_wake_content_title
-{
+
+.we_wake_content_title {
     font-size: 85px;
     line-height: 130%;
     padding-bottom: 88px;
     font-family: 'Inter', sans-serif;
     font-weight: 900;
-  
+
 }
-.we_wake_crypto_content_link
-{
+
+.we_wake_crypto_content_link {
     display: block;
     width: 170px;
     height: 56px;
@@ -110,18 +113,19 @@ ul
     text-align: center;
     line-height: 56px;
     margin: 0 auto;
-    
+
 }
+
 /*Section Gestion*/
-.gestion_content
-{
+.gestion_content {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    
+
+
 }
-.gestion_content_article 
-{
+
+.gestion_content_article {
     background-color: #1A1B23;
     text-align: center;
     display: inline-block;
@@ -130,53 +134,52 @@ ul
     width: 380px;
     height: 346px;
     padding: 25px;
-    
-   
+    margin-top: 300px;
+
+
 }
-.gestion_content_article_part1
-{
-   width: 332px;
-   height: 226px;
+
+.gestion_content_article_part1 {
+    width: 332px;
+    height: 226px;
 }
-.gestion_content_article_part1 p
-{
+
+.gestion_content_article_part1 p {
     font-size: 16px;
     color: #898CA9;
 }
-.gestion_content_article a
-{
+
+.gestion_content_article a {
     font-size: 16px;
     color: #B982FF;
 }
-.icon_fleche_direction
-{
+
+.icon_fleche_direction {
     color: #B982FF;
     width: 20px;
     padding-left: 7px;
     height: 10px;
-    
+
 }
 
 /*Section crypto mining*/
 
-.crypto_mining_content
-{
+.crypto_mining_content {
     margin-top: 30px;
     text-align: center;
     padding: 140px 70px;
-    
+
 
 }
-.crypto_mining_content_part1 
-{
-    margin: 30px 0 ;
-    
-    
-}
-.crypto_mining_content_part1 h2
 
-{
-    
+.crypto_mining_content_part1 {
+    margin: 30px 0;
+
+
+}
+
+.crypto_mining_content_part1 h2 {
+
     text-align: center;
     align-content: center;
     height: 194px;
@@ -184,77 +187,210 @@ ul
     font-family: 'Inter', sans-serif;
     line-height: 130%;
     font-weight: 900;
-    
+
 }
-.crypto_mining_content_part1 p
-{
+
+.crypto_mining_content_part1 p {
     color: #898CA9;
     font-size: 22px;
     line-height: 150%;
     text-align: center;
-    
-    
+
+
 }
 
 /*Section   Service client*/
 
-.service_client_content
-{
+.service_client_content {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-.service_client_content_part2
-{
-    
+
+.service_client_content_part2 {
+
     line-height: 150%
 }
-.service_client_content_part2 h2
-{
+
+.service_client_content_part2 h2 {
     font-size: 50px;
     line-height: 130%;
     font-family: 'Inter', sans-serif;
     letter-spacing: 0%;
     font-weight: 900;
 }
-.service_client_content_part2 p
-{
+
+.service_client_content_part2 p {
     color: #898CA9;
     padding: 30px 0;
-    
-}   
-.service_client_content_part2 a
-{
-    
+
+}
+
+.service_client_content_part2 a {
+
     padding: 15px 30px;
 }
 
 /*Section Footer*/
 
-.footer_content
-{
+.footer_content {
     display: flex;
-    gap: 50px;
-    
+    gap: 150px;
+    opacity: 30%;
+    line-height: 100%;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+
 }
-.footer_content_part1 p
-{
+
+.footer_content_part1 {
+    width: 380px;
+}
+
+.footer_content_part1 p {
     padding-bottom: 30px;
 }
-.footer_content_part1 input
-{
+
+.footer_content_part1 input {
     margin-bottom: 30px;
 }
-.footer_content_part2 a
-{
+
+.footer_content_part2 a {
     display: flex;
     align-items: center;
     padding-bottom: 30px;
 }
-.footer_content_part3 a
-{
+
+.footer_content_part3 a {
     display: flex;
     align-items: center;
     padding-bottom: 30px;
+
+}
+
+.footer_content_part1 input {
+     background-color: #0B0B0F;
+      width: 75%;
+      padding: 16px 20px;
+      height: auto;
+      border: 5px solid; /* augmente l'épaisseur pour mieux voir le dégradé */
+      border-image-source: linear-gradient(225deg, #18C8FF 14.89%, #933FFE 85.85%);
+      border-image-slice: 1;
+      display: block;
+}
+
+
+.grad1 {
+    position: absolute;
+    height: 520px;
+    width: 617px;
+    background: linear-gradient(180deg, rgba(24, 255, 158, 0) 0%, #17FFE3 100%);
+    backdrop-filter: blur(200px);
+    position: absolute;
+    border-radius: 50%;
+    top: -150px;
+    left: -150px;
+    filter: blur(145px);
+    z-index: -5;
+}
+
+.grad2 {
+    position: absolute;
+    height: 520px;
+    width: 617px;
+    background: linear-gradient(112.72deg, #DECAFF 11.44%, #691EE2 60.27%);
+    backdrop-filter: blur(200px);
+    position: absolute;
+    border-radius: 50%;
+    top: 350px;
+    right: -200px;
+    filter: blur(145px);
+    z-index: -5;
+}
+.etoile
+{
+    width: 74;
+height: 74;
+opacity: 1;
+top: 499px;
+left: 74px;
+background: #FFFFFF;
+
+
+}
+.crypto_bitcoin {
+    background: url('../images/crypto_bitcoin.png') no-repeat center center;
+    background-size: cover;
+    /* Optional: scales image */
+    position: absolute;
+    width: 97px;
+    height: 107px;
+    transform: rotate(30deg);
+    opacity: 1;
+    top: 230px;
+    left: 62px;
+
+}
+
+.crypto_planet {
+    position: absolute;
+    background: url('../images/sphere.png') no-repeat center center;
+    background-size: cover;
+    width: 110px;
+    height: 110px;
+    opacity: 1;
+    top: 510px;
+    left: 90px;
+}
+
+.crypto_7 {
+    background: url('../images/crypto_7.png') no-repeat center center;
+    background-size: cover;
+    /* Optional: scales image */
+    position: absolute;
+    width: 97px;
+    height: 107px;
+    opacity: 1;
+    top: 870px;
+    left: 300px;
+    
+
+}
+
+.crypto_losange {
+    background: url('../images/crypto_losange.png') no-repeat center center;
+    background-size: cover;
+    /* Optional: scales image */
+    position: absolute;
+    width: 120px;
+    height: 150px;
+    opacity: 1;
+    top: 340px;
+    right: 160px;
+    transform: rotate(30deg);
+}
+
+.crypto_1 {
+    background: url('../images/crypto_1.png') no-repeat center center;
+    background-size: cover;
+    /* Optional: scales image */
+    position: absolute;
+    width: 120px;
+    height: 150px;
+    opacity: 1;
+    top: 700px;
+    right: 280px;
+}
+
+.crypto_sphere {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    opacity: 1;
+    top: 510px;
+    right: -50px;
+    background: linear-gradient(112.72deg, #DECAFF 11.44%, #691EE2 60.27%);
+    z-index: 10;
 }
