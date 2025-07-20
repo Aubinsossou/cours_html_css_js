@@ -10,8 +10,14 @@
 
 <body>
     <header class="header">
+        
         <div class="container">
             <div class="header_content">
+                <div class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
                 <a href="#" class="header_left">
                     <span>LOGO</span>
                 </a>
@@ -112,14 +118,22 @@
                 <div class="formulaire_content">
                     <h2 class="formulaire_content_title">Pour nous contactez</h2>
                     <form action="">
-                        <label for="nom">Nom et prénom :</label>
-                        <input type="text" id="nom" placeholder="Nom et prénom">
-                        <label for="email">Email :</label>
-                        <input type="email" id="email" placeholder="Email">
-                        <label for="objet">Object :</label>
-                        <input type="text" id="Object" placeholder="objet">
-                        <label for="message">Message :</label>
-                        <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+                       <div class="formulaire_list">
+                            <label for="nom">Nom et prénom :</label>
+                            <input type="text" id="nom" placeholder="Nom et prénom">
+                        </div>
+                        <div class="formulaire_list">
+                            <label for="email">Email :</label>
+                            <input type="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="formulaire_list">
+                            <label for="objet">Object :</label>
+                            <input type="text" id="Object" placeholder="objet">
+                        </div>
+                        <div class="formulaire_list">
+                            <label for="message">Message :</label>
+                            <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+                       </div>
                         <div class="services_content_button"><a href="#">Envoyer</a></div>
                     </form>
                 </div>

@@ -13,6 +13,7 @@ body {
     background-size: 100%;
     color: white;
     overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
 
 }
 
@@ -27,7 +28,7 @@ footer {
 .container {
     max-width: 1080px;
     margin: 0 auto;
-
+    padding: 0 15px;
 
 }
 
@@ -44,7 +45,14 @@ ul {
     list-style: none;
 }
 
+input:focus,
+textarea:focus {
+    outline: none;
+    color: white;
+}
+
 /*Header*/
+
 
 .header_content {
     display: flex;
@@ -71,9 +79,7 @@ ul {
 }
 
 .header_content_sign_up {
-
     background: linear-gradient(to right, #18C8FF, #933FFE);
-
 }
 
 .header_content_list {
@@ -100,7 +106,7 @@ ul {
     padding-bottom: 88px;
     font-family: 'Inter', sans-serif;
     font-weight: 900;
-
+    text-align: center;
 }
 
 .we_wake_crypto_content_link {
@@ -113,7 +119,11 @@ ul {
     text-align: center;
     line-height: 56px;
     margin: 0 auto;
+}
 
+.we_wake_crypto_content_link:hover {
+    box-shadow: 0px 0px 33px 5px #933FFE;
+    transition: .3s;
 }
 
 /*Section Gestion*/
@@ -174,8 +184,6 @@ ul {
 
 .crypto_mining_content_part1 {
     margin: 30px 0;
-
-
 }
 
 .crypto_mining_content_part1 h2 {
@@ -192,11 +200,10 @@ ul {
 
 .crypto_mining_content_part1 p {
     color: #898CA9;
-    font-size: 22px;
+    font-size: 16px;
     line-height: 150%;
-    text-align: center;
-
-
+    font-weight: 400;
+    letter-spacing: 70px;
 }
 
 /*Section   Service client*/
@@ -204,13 +211,42 @@ ul {
 .service_client_content {
     display: flex;
     justify-content: center;
-    align-items: center;
+
+}
+
+
+.service_client_content_part1 {
+
+    width: 670px;
+    height: 700px;
+}
+
+.service_client_content_part1 img {
+    position: absolute;
+    transform: rotate(2deg);
+    opacity: 1;
+    top: 46px;
+    left: 140px;
+}
+
+#crypto_planet_service_client {
+    position: absolute;
+    background: url('../images/sphere.png') no-repeat center center;
+    background-size: cover;
+    width: 170px;
+    height: 170px;
+    opacity: 1;
+    top: 185px;
+    left: 500px;
 
 }
 
 .service_client_content_part2 {
 
-    line-height: 150%
+    line-height: 150%;
+    width: 580px;
+    height: 347px;
+
 }
 
 .service_client_content_part2 h2 {
@@ -232,16 +268,96 @@ ul {
     padding: 15px 30px;
 }
 
+/*Section crypto investing*/
+
+.crypto_investing_content {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    justify-content: space-between;
+    margin-bottom: 90px;
+
+}
+
+.crypto_investing_content_part1 {
+    justify-content: center;
+    align-items: center;
+    width: 580px;
+    height: 371px;
+    padding-right: 2px;
+}
+
+.crypto_investing_content_part1 h2 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 900;
+}
+
+.crypto_investing_content_part1 p {
+    margin: 20px 0;
+    line-height: 35px;
+    color: #898CA9;
+}
+
+.crypto_investing_content_part1_link {
+    margin-left: 0px;
+}
+
+.crypto_investing_content_part2 {
+    width: 294px;
+    height: 298px;
+    transform: rotate(0deg);
+    opacity: 1;
+    top: 61px;
+    left: 144px;
+
+}
+
+/* Section Transmission*/
+.transmission_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 780px;
+    height: 193px;
+    padding: 80px 200px;
+
+}
+
+.transmission_content h2 {
+    font-size: 50px;
+}
+
+.transmission_content p {
+    line-height: 83px;
+    color: #898CA9;
+}
+
+.transmission_content span {
+    color: white;
+}
+
+.transmission_content input {
+    background-color: #0B0B0F;
+    border-image-source: linear-gradient(225deg, #18C8FF 14.89%, #933FFE 85.85%);
+    width: 50%;
+    border-image-slice: 1;
+    padding: 22px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+
 /*Section Footer*/
 
 .footer_content {
+    margin-top: 350px;
     display: flex;
     gap: 150px;
     opacity: 30%;
     line-height: 100%;
     justify-content: center;
     font-family: 'Inter', sans-serif;
-
 }
 
 .footer_content_part1 {
@@ -252,9 +368,6 @@ ul {
     padding-bottom: 30px;
 }
 
-.footer_content_part1 input {
-    margin-bottom: 30px;
-}
 
 .footer_content_part2 a {
     display: flex;
@@ -270,14 +383,15 @@ ul {
 }
 
 .footer_content_part1 input {
-     background-color: #0B0B0F;
-      width: 75%;
-      padding: 16px 20px;
-      height: auto;
-      border: 5px solid; /* augmente l'épaisseur pour mieux voir le dégradé */
-      border-image-source: linear-gradient(225deg, #18C8FF 14.89%, #933FFE 85.85%);
-      border-image-slice: 1;
-      display: block;
+    background-color: #0B0B0F;
+    width: 75%;
+    padding: 20px;
+    border-image-source: linear-gradient(225deg, #18C8FF 14.89%, #933FFE 85.85%);
+    border-image-slice: 1;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
 }
 
 
@@ -308,17 +422,59 @@ ul {
     filter: blur(145px);
     z-index: -5;
 }
-.etoile
-{
-    width: 74;
-height: 74;
-opacity: 1;
-top: 499px;
-left: 74px;
-background: #FFFFFF;
-
+.grad3 {
+    position: absolute;
+    height: 493px;
+    width: 493px;
+    background: linear-gradient(180deg, #82392C 0%, #D0A22C 100%);
+    backdrop-filter: blur(300px);
+    position: absolute;
+    border-radius: 50%;
+    top: -70px;
+    left: 300px;
+    filter: blur(130px);
+    z-index: -5;
+}
+.grad4 {
+    position: absolute;
+    height: 203px;
+    width: 400px;
+    background: linear-gradient(180deg, rgba(255, 79, 24, 0) 0%, #FF4117 100%);
+    backdrop-filter: blur(50px);
+    position: absolute;
+    border-radius: 50%;
+    top: 400px;
+    left: 30px;
+    filter: blur(400px);
+    z-index: -7;
+}
+.grad5 {
+    position: absolute;
+    height: 450px;
+    width: 617px;
+    background: linear-gradient(180deg, #FF29C3, #00C2FF 100%);
+    backdrop-filter: blur(200px);
+    position: absolute;
+    border-radius: 30%;
+    top: 5px;
+    right: 0px;
+    filter: blur(170px);
+    z-index: -5;
+}
+.etoile_bannier1{
+      width: 200px;
+  height: 200px;
+  background: white;
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 
+    68% 57%, 79% 91%, 
+    50% 70%, 21% 91%, 
+    32% 57%, 2% 35%, 
+    39% 35%
+  );
 
 }
+
 .crypto_bitcoin {
     background: url('../images/crypto_bitcoin.png') no-repeat center center;
     background-size: cover;
@@ -354,7 +510,7 @@ background: #FFFFFF;
     opacity: 1;
     top: 870px;
     left: 300px;
-    
+
 
 }
 
@@ -394,3 +550,5 @@ background: #FFFFFF;
     background: linear-gradient(112.72deg, #DECAFF 11.44%, #691EE2 60.27%);
     z-index: 10;
 }
+
+/* ecran desktop: {991px:max-width ou 992px:max-width} */
