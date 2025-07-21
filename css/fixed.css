@@ -148,6 +148,11 @@ textarea:focus {
 
 
 }
+.article_icon{
+   align-items: center;
+   justify-content: center;     
+    
+}
 
 .gestion_content_article_part1 {
     width: 332px;
@@ -163,7 +168,24 @@ textarea:focus {
     font-size: 16px;
     color: #B982FF;
 }
+.image_article_1
+{
+    margin: 0 auto;
+    width: 80px;
+height: 79px;
+opacity: 1;
+border-radius: 711.74px;
+border-width: 1px;
+background: radial-gradient(111.14% 111.14% at 8.37% 0%, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0) 100%) ;
+border: 1px solid;
 
+border-image-source: radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%);
+
+backdrop-filter: blur(10px);
+margin-bottom: 12px;
+
+
+}
 .icon_fleche_direction {
     color: #B982FF;
     width: 20px;
@@ -394,7 +416,28 @@ textarea:focus {
     color: white;
 }
 
+/* Effet glass Les gradiant étoiles et planet*/
+.glass
+{
+    position: absolute;
+   width: 100px;
+   height: 100px;
+    top: 440px;
+    left: 624px;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      color: white;
+      text-align: center;
+      z-index: 1;
+      
+      
 
+}
 .grad1 {
     position: absolute;
     height: 520px;
@@ -548,7 +591,7 @@ textarea:focus {
     top: 510px;
     right: -50px;
     background: linear-gradient(112.72deg, #DECAFF 11.44%, #691EE2 60.27%);
-    z-index: 10;
+    z-index: -3;
 }
 
 /* ecran desktop: {991px:max-width ou 992px:max-width} */
