@@ -147,5 +147,73 @@
             </div>
         </div>
     </footer>
+      <script>
+      function nombre_premier(nombre){
+        for(i=2 ; i <= nombre-1; i++)
+        {
+            if(nombre%i ===0 ){
+                console.log("Votre nombre n'est pas un nombre premier");
+                return;
+            }
+            
+            else
+            {
+                console.log("Votre nombre est un nombre premier");
+                return;
+            }
+            
+        }
+      }
+      nombre_premier(12)
+    
+        function moyenne(nombre1,nombre2,nombre3)
+        {
+            console.log("Voici votre moyenne")
+            console.log((nombre1+nombre2+nombre3)/3);
+        }
+        moyenne(20,20,27);
+
+        function table_multiply(nombre){
+            console.log("Voici votre table de multiplication du nombre "+nombre)
+            for(i=0; i <= 12 ; i++){
+                let result=nombre*i
+                
+                console.log(nombre + "X" + i +"=" + result)
+            }
+        }
+        table_multiply(7)
+
+        function table_des_matiere(nombre,operator){
+            let soustration="-"
+            let addition= "+"
+            let fois= "*"
+            let division= "/"
+          if(operator==soustration){
+              for(i=0; i<= 9; i++){
+                let result=nombre-i
+                console.log(nombre + "-" + i + "=" + result)
+            }
+          }
+           else if(operator==addition){
+              for(i=0; i<= 9; i++){
+                let result=nombre+i
+                console.log(nombre + "+" + i + "=" + result)
+            }
+          }
+          else if(operator==fois){
+              for(i=0; i<= 9; i++){
+                let result=nombre*i
+                console.log(nombre + "X" + i + "=" + result)
+            }
+          }
+           else if(operator==division){
+              for(i=0; i<= 9; i++){
+                let result=nombre/i
+                console.log(nombre + "/" + i + "=" + result)
+            }
+          }
+        }
+        table_des_matiere(7,"+")
+    </script>
 </body>
 </html>

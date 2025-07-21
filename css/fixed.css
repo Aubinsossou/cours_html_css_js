@@ -131,7 +131,7 @@ textarea:focus {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-
+    margin: 0 auto;
 
 }
 
@@ -148,10 +148,11 @@ textarea:focus {
 
 
 }
-.article_icon{
-   align-items: center;
-   justify-content: center;     
-    
+
+.article_icon {
+    align-items: center;
+    justify-content: center;
+
 }
 
 .gestion_content_article_part1 {
@@ -168,24 +169,25 @@ textarea:focus {
     font-size: 16px;
     color: #B982FF;
 }
-.image_article_1
-{
+
+.image_article_1 {
     margin: 0 auto;
     width: 80px;
-height: 79px;
-opacity: 1;
-border-radius: 711.74px;
-border-width: 1px;
-background: radial-gradient(111.14% 111.14% at 8.37% 0%, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0) 100%) ;
-border: 1px solid;
+    height: 79px;
+    opacity: 1;
+    border-radius: 711.74px;
+    border-width: 1px;
+    background: radial-gradient(111.14% 111.14% at 8.37% 0%, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid;
 
-border-image-source: radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%);
+    border-image-source: radial-gradient(86.84% 30.42% at 129.28% 66.93%, #8470FF 0%, rgba(134, 92, 255, 0) 100%);
 
-backdrop-filter: blur(10px);
-margin-bottom: 12px;
+    backdrop-filter: blur(10px);
+    margin-bottom: 12px;
 
 
 }
+
 .icon_fleche_direction {
     color: #B982FF;
     width: 20px;
@@ -368,7 +370,87 @@ margin-bottom: 12px;
     border-radius: 10px;
 }
 
+/*Section Pricing*/
+.pricing {
+    background: #000;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+}
 
+.pricing__text {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.pricing__text h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pricing__text p {
+    color: #bbb;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.learn-more {
+    color: #B982FF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pricing__table {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    background: #1a1a1a;
+}
+
+th,
+td {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+td a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.positive {
+    color: #00ff9d;
+}
+
+.negative {
+    color: #FF8282;
+}
+
+@media (max-width: 768px) {
+    .pricing__text h2 {
+        font-size: 1.7rem;
+    }
+
+    th,
+    td {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
 
 /*Section Footer*/
 
@@ -417,27 +499,27 @@ margin-bottom: 12px;
 }
 
 /* Effet glass Les gradiant étoiles et planet*/
-.glass
-{
+.glass {
     position: absolute;
-   width: 100px;
-   height: 100px;
-    top: 440px;
-    left: 624px;
-      padding: 2rem;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-      color: white;
-      text-align: center;
-      z-index: 1;
-      
-      
+    width: 150px;
+    height: 150px;
+    top: 460px;
+    left: 604px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    color: white;
+    z-index: -1;
+    font-size: 70px;
+    filter: blur(5px);
+    align-content: center;
+    
+
 
 }
+
 .grad1 {
     position: absolute;
     height: 520px;
@@ -465,6 +547,7 @@ margin-bottom: 12px;
     filter: blur(145px);
     z-index: -5;
 }
+
 .grad3 {
     position: absolute;
     height: 493px;
@@ -478,6 +561,7 @@ margin-bottom: 12px;
     filter: blur(130px);
     z-index: -5;
 }
+
 .grad4 {
     position: absolute;
     height: 203px;
@@ -491,6 +575,7 @@ margin-bottom: 12px;
     filter: blur(400px);
     z-index: -7;
 }
+
 .grad5 {
     position: absolute;
     height: 450px;
@@ -504,17 +589,30 @@ margin-bottom: 12px;
     filter: blur(170px);
     z-index: -5;
 }
-.etoile_bannier1{
-      width: 200px;
-  height: 200px;
-  background: white;
-  clip-path: polygon(
-    50% 0%, 61% 35%, 98% 35%, 
-    68% 57%, 79% 91%, 
-    50% 70%, 21% 91%, 
-    32% 57%, 2% 35%, 
-    39% 35%
-  );
+.grad6 {
+    position: absolute;
+    height: 493px;
+    width: 493px;
+   background: linear-gradient(180deg, #2C4982 0%, #2CD095 100%);
+    backdrop-filter: blur(300px);
+    position: absolute;
+    border-radius: 50%;
+    top: -70px;
+    left: 300px;
+    filter: blur(130px);
+    z-index: -5;
+}
+
+
+.etoile_bannier1 {
+    width: 200px;
+    height: 200px;
+    background: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%,
+            68% 57%, 79% 91%,
+            50% 70%, 21% 91%,
+            32% 57%, 2% 35%,
+            39% 35%);
 
 }
 
