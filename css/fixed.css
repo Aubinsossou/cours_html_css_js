@@ -52,6 +52,20 @@ textarea:focus {
 }
 
 /*Header*/
+.hamburger {
+      width: 30px;
+      height: 25px;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      
+    }
+      .hamburger span {
+      display: block;
+      height: 7px;
+      background: linear-gradient(to right, #18C8FF, #933FFE);
+      border-radius: 2px;
+    }
 
 
 .header_content {
@@ -172,6 +186,7 @@ textarea:focus {
 
 .image_article_1 {
     margin: 0 auto;
+    align-content: center;
     width: 80px;
     height: 79px;
     opacity: 1;
@@ -489,7 +504,7 @@ td a {
 .footer_content_part1 input {
     background-color: #0B0B0F;
     width: 75%;
-    padding: 20px;
+    padding: 15px;
     border-image-source: linear-gradient(225deg, #18C8FF 14.89%, #933FFE 85.85%);
     border-image-slice: 1;
     margin-bottom: 30px;
@@ -693,3 +708,17 @@ td a {
 }
 
 /* ecran desktop: {991px:max-width ou 992px:max-width} */
+
+/*LA responsivité*/
+
+@media (max-width: 768px) {
+    .pricing__text h2 {
+        font-size: 1.7rem;
+    }
+
+    th,
+    td {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}

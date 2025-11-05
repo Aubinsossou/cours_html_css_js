@@ -1,221 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/test.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/test.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        
-        <div class="container">
-            <div class="header_content">
-                <div class="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
-                <a href="#" class="header_left">
-                    <span>LOGO</span>
-                </a>
-                <ul class="header_right">
-                    <li class="header_right_item"><a href="#">Acceuil</a></li>
-                    <li class="header_right_item"><a href="#">Blog</a></li>
-                    <li class="header_right_item"><a href="#">Evènement</a></li>
-                    <li class="header_right_item"><a href="#">A propos</a></li>
-                    <li class="header_right_item"><a href="#">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="header_content">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <a href="#" class="header_left">
+            <span>LOGO</span>
+          </a>
+          <ul class="header_right">
+            <li class="header_right_item"><a href="#">Acceuil</a></li>
+            <li class="header_right_item"><a href="#">Blog</a></li>
+            <li class="header_right_item"><a href="#">Evènement</a></li>
+            <li class="header_right_item"><a href="#">A propos</a></li>
+            <li class="header_right_item"><a href="#">Contact</a></li>
+          </ul>
         </div>
+      </div>
     </header>
     <main class="main">
-        <!-- banner-->
-        <section class="banner">
-            <div class="container">
-                <div class="banner_content">
-                    <div class="banner_left">
-                        <h1 class="banner_left_title">Work Hard</h1>
-                        <p class="banner_left_text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure .
-                        </p>
-                        <a href="#" class="banner_left_link">Découvrir</a>
-                    </div>
-                    <div class="banner_right">
-                        <img src="./images/image.png" alt="banner_image">
-                    </div>
-                </div>
+      <!-- banner-->
+      <section class="banner">
+        <div class="container">
+          <div class="banner_content">
+            <div class="banner_left">
+              <h1 class="banner_left_title">Work Hard</h1>
+              <p class="banner_left_text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure .
+              </p>
+              <a
+                href="#"
+                class="banner_left_link"
+                onclick="datatogglevisibility()"
+                >Découvrir</a
+              >
             </div>
-        </section>
+            <div class="banner_right">
+              <img src="./images/image.png" alt="banner_image" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!--services-->
-        <section class="services">
-            <div class="container">
-                <div class="services_content">
-                    <h2 class="service_title">Nos services</h2>
-                    <p class="service_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.isi ut aliquip ex ea commodo
-                        consequat.
-                    </p>
-                    <div class="services_list">
-                        <div class="services_list_item">
-                            <img src="./images/icon.png" alt="icon" class="service_image">
-                            <h3 class="service_sub_title">Service1</h3>
-                            <p class="service_sub_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Illum, veniam dolore eum dolorem laudantium exercitationem blanditiis dolores, corrupti
-                                vel, nihil sit! Ad, maiores praesentium magni incidunt perferendis quo suscipit placeat.
-                            </p>
-                            <div class="banner_left_link">
-                                <a href="#">Découvrir</a>
-                            </div>
-                        </div>
-                        <div class="services_list_item">
-                            <img src="./images/icon.png" alt="icon" class="service_image">
-                            <h3 class="service_sub_title">Service2</h3>
-                            <p class="service_sub_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Illum, veniam dolore eum dolorem laudantium exercitationem blanditiis dolores, corrupti
-                                vel, nihil sit! Ad, maiores praesentium magni incidunt perferendis quo suscipit placeat.
-                            </p>
-                            <div class="banner_left_link">
-                                <a href="#">Découvrir</a>
-                            </div>
-                        </div>
-                        <div class="services_list_item">
-                            <img src="./images/icon.png" alt="icon" class="service_image">
-                            <h3 class="service_sub_title">Service3</h3>
-                            <p class="service_sub_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Illum, veniam dolore eum dolorem laudantium exercitationem blanditiis dolores, corrupti
-                                vel, nihil sit! Ad, maiores praesentium magni incidunt perferendis quo suscipit placeat.
-                            </p>
-                            <div class="banner_left_link">
-                                <a href="#">Découvrir</a>
-                            </div>
-                        </div>
-                        <div class="services_list_item">
-                            <img src="./images/icon.png" alt="icon" class="service_image">
-                            <h3 class="service_sub_title">Service4</h3>
-                            <p class="service_sub_description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Illum, veniam dolore eum dolorem laudantium exercitationem blanditiis dolores, corrupti
-                                vel, nihil sit! Ad, maiores praesentium magni incidunt perferendis quo suscipit placeat.
-                            </p>
-                            <div class="banner_left_link">
-                                <a href="#">Découvrir</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services_content_button">
-                        <a href="#">Découvrir</a>
-                    </div>
+      <!--services-->
+      <section class="services">
+        <div class="container">
+          <div class="services_content">
+            <h2 class="service_title">Nos services</h2>
+            <p class="service_description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.isi ut
+              aliquip ex ea commodo consequat.
+            </p>
+            <div class="services_list">
+              <div class="services_list_item">
+                <img src="./images/icon.png" alt="icon" class="service_image" />
+                <h3 class="service_sub_title">Service1</h3>
+                <p class="service_sub_description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Illum, veniam dolore eum dolorem laudantium exercitationem
+                  blanditiis dolores, corrupti vel, nihil sit! Ad, maiores
+                  praesentium magni incidunt perferendis quo suscipit placeat.
+                </p>
+                <div class="banner_left_link">
+                  <a href="#">Découvrir</a>
                 </div>
-            </div>
-        </section>
-        <section class="formulaire">
-            <div class="container">
-                <div class="formulaire_content">
-                    <h2 class="formulaire_content_title">Pour nous contactez</h2>
-                    <form action="">
-                       <div class="formulaire_list">
-                            <label for="nom">Nom et prénom :</label>
-                            <input type="text" id="nom" placeholder="Nom et prénom">
-                        </div>
-                        <div class="formulaire_list">
-                            <label for="email">Email :</label>
-                            <input type="email" id="email" placeholder="Email">
-                        </div>
-                        <div class="formulaire_list">
-                            <label for="objet">Object :</label>
-                            <input type="text" id="Object" placeholder="objet">
-                        </div>
-                        <div class="formulaire_list">
-                            <label for="message">Message :</label>
-                            <textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-                       </div>
-                        <div class="services_content_button"><a href="#">Envoyer</a></div>
-                    </form>
+              </div>
+              <div class="services_list_item">
+                <img src="./images/icon.png" alt="icon" class="service_image" />
+                <h3 class="service_sub_title">Service2</h3>
+                <p class="service_sub_description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Illum, veniam dolore eum dolorem laudantium exercitationem
+                  blanditiis dolores, corrupti vel, nihil sit! Ad, maiores
+                  praesentium magni incidunt perferendis quo suscipit placeat.
+                </p>
+                <div class="banner_left_link">
+                  <a href="#">Découvrir</a>
                 </div>
+              </div>
+              <div class="services_list_item">
+                <img src="./images/icon.png" alt="icon" class="service_image" />
+                <h3 class="service_sub_title">Service3</h3>
+                <p class="service_sub_description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Illum, veniam dolore eum dolorem laudantium exercitationem
+                  blanditiis dolores, corrupti vel, nihil sit! Ad, maiores
+                  praesentium magni incidunt perferendis quo suscipit placeat.
+                </p>
+                <div class="banner_left_link">
+                  <a href="#">Découvrir</a>
+                </div>
+              </div>
+              <div class="services_list_item">
+                <img src="./images/icon.png" alt="icon" class="service_image" />
+                <h3 class="service_sub_title">Service4</h3>
+                <p class="service_sub_description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Illum, veniam dolore eum dolorem laudantium exercitationem
+                  blanditiis dolores, corrupti vel, nihil sit! Ad, maiores
+                  praesentium magni incidunt perferendis quo suscipit placeat.
+                </p>
+                <div class="banner_left_link">
+                  <a href="#">Découvrir</a>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="services_content_button">
+              <a href="#">Découvrir</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="formulaire">
+        <div class="container">
+          <div class="formulaire_content">
+            <h2 class="formulaire_content_title">Pour nous contactez</h2>
+            <div
+              id="login"
+              style="
+                width: 150px;
+                height: 50px;
+                background-color: aqua;
+                border-radius: 20px;
+                margin: 0 auto;
+                text-align: center;
+                align-content: center;
+                display: none;
+              "
+            >
+              Connexion réussi
+            </div>
+            <form action="" id="form" method="">
+              <div class="formulaire_list">
+                <label for="nom">Nom et prénom :</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Nom et prénom"
+                  autocomplete="none"
+                  class="input"
+                />
+                <p style="display: none" class="name_message_error"></p>
+              </div>
+              <div class="formulaire_list">
+                <label for="email">Email :</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  
+                  class="input"
+                />
+                <p style="display: none" class="email_message_error"></p>
+              </div>
+              <div class="formulaire_list">
+                <label for="objet">Object :</label>
+                <input
+                  type="text"
+                  id="Object"
+                  placeholder="objet"
+                  
+                  class="input"
+                />
+                <p style="display: none" class="object"></p>
+              </div>
+              <div class="formulaire_list">
+                <label for="message">Message :</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="6"
+                  placeholder="Message"
+                  
+                ></textarea>
+                
+              </div>
+              <div class="formulaire_button">
+                <button id="button" type="submit">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="footer_content">
-                <p>Tous droits réservés, @2023.</p>
-            </div>
+      <div class="container">
+        <div class="footer_content">
+          <p>Tous droits réservés, @2023.</p>
         </div>
+      </div>
     </footer>
-      <script>
-      function nombre_premier(nombre){
-        for(i=2 ; i <= nombre-1; i++)
-        {
-            if(nombre%i ===0 ){
-                console.log("Votre nombre n'est pas un nombre premier");
-                return;
-            }
-            
-            else
-            {
-                console.log("Votre nombre est un nombre premier");
-                return;
-            }
-            
+
+    <!-- <script>
+      /*  function nombre_premier(nombre) {
+             let is_first = true;
+             for (i = 2; i <= nombre / 2; i++) {
+               if (nombre % i === 0) {
+                 is_first = false;
+                 console.log("Votre nombre n'est pas un nombre premier");
+                 break;
+               }
+             }
+             if (is_first) {
+               console.log("Votre nombre est un nombre premier");
+             }
+           }
+           nombre_premier(1);
+      */
+      /*   function moyenne(nombre1,nombre2,nombre3)
+             {
+                 console.log("Voici votre moyenne")
+                 console.log((nombre1+nombre2+nombre3)/3);
+             }
+             moyenne(20,20,27);
+
+      */
+      /*  let jours = "tftyfyt";
+           switch (jours) {
+             case "LUNDI":
+               console.log("C'est le début de la semaine");
+               break;
+             case "Samedi":
+             case "Dimanche":
+               console.log("C'est le weekend");
+               break
+             default:
+               console.log("Jour ouvré");
+           } */
+      /* function table_des_operations(nombre, operator) {
+             let soustration = "-";
+             let addition = "+";
+             let multiplication = "*";
+             let division = "/";
+             if (operator == soustration) {
+               console.log("Voici votre table de soustration de nombre " + nombre);
+               for (i = 0; i <= 9; i++) {
+                 let result = nombre - i;
+                 console.log(nombre + "-" + i + "=" + result);
+               }
+             } else if (operator == addition) {
+               console.log("Voici votre table d'addition du nombre " + nombre);
+               for (i = 0; i <= 9; i++) {
+                 let result = nombre + i;
+                 console.log(nombre + "+" + i + "=" + result);
+               }
+             } else if (operator == multiplication) {
+               console.log(
+                 "Voici votre table de multiplication du nombre " + nombre
+               );
+               for (i = 0; i <= 9; i++) {
+                 let result = nombre * i;
+                 console.log(nombre + "X" + i + "=" + result);
+               }
+             } else if (operator == division) {
+               console.log("Voici votre table de division du nombre " + nombre);
+               for (i = 1; i <= 9; i++) {
+                 let result = nombre / i;
+                 console.log(nombre + "/" + i + "=" + result);
+               }
+             }
+           }
+           table_des_operations(7, "*"); */
+
+      //let age = 13;
+      /* if(age>=18)
+           {
+             console.log("Vous êtes majeurs")
+           }
+           else
+           console.log("Vous êtes encors mineurs")
+      */
+      /*  let test = age <= 10 ? "Vous êtes un enfant" : age >10 && age <18 ? "Vous êtes un adolescant" : "Vous êtes majeurs"
+           console.log(test) */
+
+      /*   let jours = [
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi",
+        "Vendredi",
+        "Samedi",
+        "Vendredi",
+        "Dimanche",
+      ];
+      jours.forEach((jour) => {
+        console.log("Jours de la semaine " + jour);
+      });
+      console.log(
+        "======================================================================================"
+      );
+      let numbers = [2, 5, 7, 9];
+      let double = 0;
+      numbers.forEach((numb, index) => {
+        double = numb[index] * 2;
+      });
+      console.log(numbers);
+      numbers.forEach((doubl, index) => {
+        console.log(doubl);
+      });
+      console.log(
+        "======================================================================================"
+      );
+      function table_operator(number, operator) {
+        let operatore = {
+          "+": "addition",
+          "-": "soustration",
+          "/": "division",
+          "*": "multiplication",
+        };
+
+        console.log(
+          "Voici votre table de " + operatore[operator] + " du nombre " + number
+        );
+
+        for (i = 0; i <= 12; i++) {
+          switch (operator) {
+            case "+":
+              resultat = number + i;
+              console.log(number + "+" + i + "=" + resultat);
+              break;
+            case "-":
+              resultat = number - i;
+              console.log(number + "-" + i + "=" + resultat);
+              break;
+            case "x":
+            case "*":
+              resultat = number * i;
+              console.log(number + "x" + i + "=" + resultat);
+              break;
+            case "/":
+              resultat = number / i;
+              console.log(number + "/" + i + "=" + resultat);
+              break;
+            default:
+              console.log("Vous de devez choisir un operateur");
+              break;
+          }
         }
       }
-      nombre_premier(12)
-    
-        function moyenne(nombre1,nombre2,nombre3)
-        {
-            console.log("Voici votre moyenne")
-            console.log((nombre1+nombre2+nombre3)/3);
-        }
-        moyenne(20,20,27);
+      table_operator(7, "*"); -->
 
-        function table_multiply(nombre){
-            console.log("Voici votre table de multiplication du nombre "+nombre)
-            for(i=0; i <= 12 ; i++){
-                let result=nombre*i
-                
-                console.log(nombre + "X" + i +"=" + result)
-            }
-        }
-        table_multiply(7)
-
-        function table_des_matiere(nombre,operator){
-            let soustration="-"
-            let addition= "+"
-            let fois= "*"
-            let division= "/"
-
-            console.log("Voici votre table des matières en fonction de l'operateur choisi")
-          if(operator==soustration){
-              for(i=0; i<= 9; i++){
-                let result=nombre-i
-                console.log(nombre + "-" + i + "=" + result)
-            }
-          }
-           else if(operator==addition){
-              for(i=0; i<= 9; i++){
-                let result=nombre+i
-                console.log(nombre + "+" + i + "=" + result)
-            }
-          }
-          else if(operator==fois){
-              for(i=0; i<= 9; i++){
-                let result=nombre*i
-                console.log(nombre + "X" + i + "=" + result)
-            }
-          }
-           else if(operator==division){
-              for(i=0; i<= 9; i++){
-                let result=nombre/i
-                console.log(nombre + "/" + i + "=" + result)
-            }
-          }
-        }
-        table_des_matiere(7,"+")
-    </script>
-</body>
+    <!--   let strings = ["Orange", "Banane", "Singe", "Verdragon"];
+       let tailles = [];
+      strings.forEach((string) => {
+        console.log(string);
+        tailles.push(string.length);
+       });
+      console.log(tailles);
+       
+    </script>-->
+    <script src="script.js"></script>
+  </body>
 </html>

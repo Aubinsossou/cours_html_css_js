@@ -1,0 +1,17 @@
+Les commandes pour faire des manipulations sur les tableaux 
+
+Les fonctions{
+	pop() : permet de récuperer le dernier élément d'un tableau
+	unshift()" : permet de récuperer le premier élément d'un tableau 
+	unshift(): permet de récuperer la position du dernier élément d'un tableau
+	join() : permet de transformer les elements d'un tableau en chaine de caractere et de les joindre en eux avec le caractere specifier
+	push(): Ajoute un ou plusieurs éléments à la fin d'un tableau et retourne la nouvelle longueur du tableau.
+        Fonctions de manipulation:
+        concat(): Retourne un nouveau tableau qui est la combinaison de ce tableau et d'un ou plusieurs autres tableaux. 
+        slice(): Retourne une copie superficielle (shallow copy) d'une partie d'un tableau dans un nouveau tableau. 
+        splice(): Modifie le contenu d'un tableau en supprimant, remplaçant ou ajoutant des éléments. 
+        reverse(): Inverse l'ordre des éléments d'un tableau. 
+        sort(): Trie les éléments d'un tableau par rapport à une fonction de comparaison fournie. 
+}
+
+les commandes pour la manipulation des objects

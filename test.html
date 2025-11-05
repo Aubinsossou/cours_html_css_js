@@ -1,96 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Test Page</title>
     <link rel="stylesheet" href="css/test.css">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+                
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="header_content">
-                <a href="#" id="logo"><span>Logo</span></a>
+                <a href="#" id="logo" class="header_left"><span>Logo</span></a>
                 <nav id="nav">
-                   <ul>
-                    <li><a href="#Accueil">Acceuil</a></li>
-                    <li><a href="#Blogs">Blogs</a></li>
-                    <li><a href="#evenement">Evernement</a></li>
-                    <li><a href="#Apropos">A propos</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                   </ul>
+                    <ul class="header_right">
+                        <li><a href="#Accueil">Acceuil</a></li>
+                        <li><a href="#Blogs">Blogs</a></li>
+                        <li><a href="#evenement">Evernement</a></li>
+                        <li><a href="#Apropos">A propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </nav>
             </div>
         </div>
     </header>
     <main class="main">
-        <section>
-                <div id="work_hard">
-                    <div  id="article_1"> 
-                        <h1>Work Hard</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis quo atque libero cum provident corporis voluptas dolorem. Eaque, earum error ipsam dolor animi non vero quis quidem, distinctio sunt ut.</p>
-                        <a href="#" class="button">Découvrir</a>
+        <section class="banner">
+            <div id="work_hard" class="container">
+                <div id="work_hard" class="banner_content">
+                    <div id="article_1" class="banner_left">
+                        <h1 class="banner_left_title">Work Hard</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis quo atque libero cum
+                            provident corporis voluptas dolorem. Eaque, earum error ipsam dolor animi non vero quis
+                            quidem, distinctio sunt ut.</p>
+                        <div style="margin:50px 0"><a href="#" class="banner_left_link">Découvrir</a></div>
                     </div>
                     <div id="article-2">
                         <img src="images/image.png" alt="">
                     </div>
                 </div>
+            </div>
         </section>
-        <section>
-            <div class="container" >
+        <section class="services_content">
+            <div class="container">
                 <h2>Nos services</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.isi ut aliquip ex ea commodo consequat.</p>
-                <div id="services">
-                    <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut
+                    labore et dolore magna aliqua.isi ut aliquip ex ea commodo consequat.</p>
+                <div id="services" class="services_list">
+                    <article class="services_list_item">
                         <img src="images/icon.png" alt="Icon">
                         <h3>Service 1</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...</p>
                         <a href="#" class="button">Découvrir</a>
                     </article>
-                       <article>
+                    <article class="services_list_item">
                         <img src="images/icon.png" alt="Icon">
                         <h3>Service 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...</p>           
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...</p>
                         <a href="#" class="button">Découvrir</a>
                     </article>
-                       <article>
+                    <article class="services_list_item">
                         <img src="images/icon.png" alt="Icon">
                         <h3>Service 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...</p> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...</p>
                         <a href="#" class="button">Découvrir</a>
                     </article>
-                       <article>
+                    <article class="services_list_item">
                         <img src="images/icon.png" alt="Icon">
                         <h3>Service 4</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...</p> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ...</p>
                         <a href="#" class="button">Découvrir</a>
                     </article>
                 </div>
-                <div class="but"><a href="#" class="button" >Découvrir</a></div>
+                <div class="but" ><a href="#" class="banner_left_link" >Découvrir</a></div>
             </div>
         </section>
         <section class="formulaire">
             <div class="container">
-                <div id="contact">
-                    <h2>Pour nous contactez</h2>
+                <div class="formulaire_content">
+                    <h2 class="formulaire_content_title">Pour nous contactez</h2>
                     <form action="">
-                        <label for="nom" >Nom et prénom :</label>
+                        <label for="nom">Nom et prénom :</label>
                         <input type="text" id="nom" placeholder="Nom et prénom">
-                        <label for="email" >Email :</label>
+                        <label for="email">Email :</label>
                         <input type="email" id="email" placeholder="Email">
-                        <label for="objet" >Objet :</label>
+                        <label for="objet">Objet :</label>
                         <input type="text" id="objet" placeholder="Objet">
                         <label for="message">Message :</label>
                         <textarea name="message" id="message">Message</textarea>
-                        <div class="but"><button class="button">Envoyer</button></div>
+                        <div class="but" class="formulaire_button"><button id="button" >Envoyer</button></div>
                     </form>
-                    
-                    
+
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        Tous droits réservés, @2023.
+        <div class="footer_content"><p>Tous droits réservés, @2023.</p></div>
     </footer>
 </body>
+
 </html>
